@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "level": 95,
+    "category": "Frontend"
+  },
+  {
+    "id": 2,
+    "name": "TypeScript",
+    "level": 88,
+    "category": "Language"
+  },
+  {
+    "id": 3,
+    "name": "Tailwind CSS",
+    "level": 92,
+    "category": "Styling"
+  },
+  {
+    "id": 4,
+    "name": "Node.js",
+    "level": 78,
+    "category": "Backend"
+  },
+  {
+    "id": 5,
+    "name": "GraphQL",
+    "level": 82,
+    "category": "API"
+  },
+  {
+    "id": 6,
+    "name": "Framer Motion",
+    "level": 85,
+    "category": "Animation"
+  },
+  {
+    "id": 7,
+    "name": "Next.js",
+    "level": 80,
+    "category": "Framework"
+  },
+  {
+    "id": 8,
+    "name": "Three.js",
+    "level": 70,
+    "category": "3D Graphics"
+  }
+]

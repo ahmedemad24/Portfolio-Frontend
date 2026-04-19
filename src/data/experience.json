@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "company": "TechCorp Inc.",
+    "position": "Senior Frontend Developer",
+    "startDate": "2022-03",
+    "endDate": "Present",
+    "current": true,
+    "description": "Leading frontend development for enterprise SaaS products. Architected and implemented a component library used across 15+ products, improving development velocity by 40%.",
+    "achievements": [
+      "Led migration from class components to React Hooks and TypeScript",
+      "Implemented CI/CD pipelines reducing deployment time by 60%",
+      "Mentored team of 5 junior developers"
+    ]
+  },
+  {
+    "id": 2,
+    "company": "StartupXYZ",
+    "position": "Frontend Developer",
+    "startDate": "2020-06",
+    "endDate": "2022-02",
+    "current": false,
+    "description": "Built and maintained customer-facing web applications serving 100K+ daily active users. Collaborated closely with design team to implement pixel-perfect UIs.",
+    "achievements": [
+      "Developed real-time collaboration features using WebSockets",
+      "Optimized application performance achieving 95+ Lighthouse scores",
+      "Integrated payment processing with Stripe"
+    ]
+  },
+  {
+    "id": 3,
+    "company": "Digital Agency Pro",
+    "position": "Junior Frontend Developer",
+    "startDate": "2019-01",
+    "endDate": "2020-05",
+    "current": false,
+    "description": "Created responsive websites and web applications for diverse clients including e-commerce, healthcare, and finance sectors.",
+    "achievements": [
+      "Delivered 20+ client projects on time and within budget",
+      "Implemented accessibility standards (WCAG 2.1 AA)",
+      "Introduced modern build tools and workflows"
+    ]
+  }
+]
