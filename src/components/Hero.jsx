@@ -1,25 +1,25 @@
 import { motion } from 'framer-motion';
-
 import personalInfo from '../data/personal-info.json';
 
 const Hero = () => {
   const { name, title, tagline, bio, social } = personalInfo;
-
+  
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden gradient-bg">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden gradient-bg pt-20">
       {/* Background glow effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl animate-pulse-glow" />
       
-      <div className="max-w-7xl mx-auto px-6 py-20 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-20 relative z-10">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            className="space-y-6"
           >
             <motion.p
-              className="text-purple-400 font-medium mb-4"
+              className="text-purple-400 font-medium text-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -28,7 +28,7 @@ const Hero = () => {
             </motion.p>
             
             <motion.h1
-              className="text-5xl md:text-7xl font-bold mb-4"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
@@ -37,7 +37,7 @@ const Hero = () => {
             </motion.h1>
             
             <motion.h2
-              className="text-3xl md:text-4xl text-gray-300 mb-6"
+              className="text-2xl md:text-3xl lg:text-4xl text-gray-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
@@ -46,7 +46,7 @@ const Hero = () => {
             </motion.h2>
             
             <motion.p
-              className="text-gray-400 text-lg mb-8 max-w-lg"
+              className="text-gray-400 text-lg leading-relaxed max-w-xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
@@ -55,14 +55,14 @@ const Hero = () => {
             </motion.p>
             
             <motion.div
-              className="flex gap-4"
+              className="flex flex-wrap gap-4 pt-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
             >
               <motion.a
                 href="#projects"
-                className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300"
+                className="px-8 py-3.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -71,7 +71,7 @@ const Hero = () => {
               
               <motion.a
                 href="#contact"
-                className="px-8 py-3 glass rounded-full font-semibold hover:bg-white/10 transition-all duration-300"
+                className="px-8 py-3.5 glass rounded-full font-semibold hover:bg-white/10 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -80,7 +80,7 @@ const Hero = () => {
             </motion.div>
             
             <motion.div
-              className="flex gap-6 mt-12"
+              className="flex gap-6 pt-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
@@ -127,7 +127,7 @@ const Hero = () => {
                   >
                     💻
                   </motion.div>
-                  <p className="text-gray-300">Building the future<br />one component at a time</p>
+                  <p className="text-gray-300 text-lg leading-relaxed">Building the future<br />one component at a time</p>
                 </div>
               </motion.div>
             </div>

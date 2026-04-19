@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion';
-
 import personalInfo from '../data/personal-info.json';
 
 const About = () => {
   const { bio, location, availability } = personalInfo;
-
+  
   return (
-    <section id="about" className="py-20 gradient-bg">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="about" className="py-20 md:py-28 gradient-bg">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -15,15 +14,15 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">About Me</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
             Get to know the person behind the code
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -56,7 +55,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="grid grid-cols-2 gap-4"
+            className="grid grid-cols-2 gap-6"
           >
             {[
               { number: '5+', label: 'Years Experience' },
@@ -74,7 +73,7 @@ const About = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="text-4xl font-bold gradient-text mb-2">{stat.number}</div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
+                <div className="text-gray-400 text-sm font-medium">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>
