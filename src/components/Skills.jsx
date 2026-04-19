@@ -3,10 +3,10 @@ import skillsData from '../data/skills.json';
 
 const Skills = () => {
   const categories = [...new Set(skillsData.map(skill => skill.category))];
-
+  
   return (
-    <section id="skills" className="py-20 gradient-bg">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="skills" className="py-20 md:py-28 gradient-bg">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -14,10 +14,10 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Skills & Expertise</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
             Technologies and tools I work with
           </p>
         </motion.div>
@@ -26,14 +26,14 @@ const Skills = () => {
           {categories.map((category, categoryIndex) => (
             <motion.div
               key={category}
-              className="glass rounded-2xl p-6 card-hover"
+              className="glass rounded-2xl p-8 card-hover"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: categoryIndex * 0.1 }}
             >
-              <h3 className="text-xl font-bold mb-6 text-white">{category}</h3>
-              <div className="space-y-4">
+              <h3 className="text-xl font-bold mb-8 text-white">{category}</h3>
+              <div className="space-y-6">
                 {skillsData
                   .filter(skill => skill.category === category)
                   .map((skill, index) => (
@@ -44,11 +44,11 @@ const Skills = () => {
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.1 }}
                     >
-                      <div className="flex justify-between mb-2">
-                        <span className="text-gray-300">{skill.name}</span>
-                        <span className="text-purple-400">{skill.level}%</span>
+                      <div className="flex justify-between mb-3">
+                        <span className="text-gray-300 font-medium">{skill.name}</span>
+                        <span className="text-purple-400 font-semibold">{skill.level}%</span>
                       </div>
-                      <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+                      <div className="h-2.5 bg-gray-800 rounded-full overflow-hidden">
                         <motion.div
                           className="h-full bg-gradient-to-r from-purple-600 to-blue-600 rounded-full"
                           initial={{ width: 0 }}

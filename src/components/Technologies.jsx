@@ -3,8 +3,8 @@ import technologiesData from '../data/technologies.json';
 
 const Technologies = () => {
   return (
-    <section className="py-20 gradient-bg">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-20 md:py-28 gradient-bg">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -12,15 +12,15 @@ const Technologies = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Technologies</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
             Tools and frameworks I use to bring ideas to life
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
           {technologiesData.map((tech, index) => (
             <motion.div
               key={tech.id}

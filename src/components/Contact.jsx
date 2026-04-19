@@ -9,7 +9,7 @@ const Contact = () => {
     email: '',
     message: ''
   });
-  const [status, setStatus] = useState(null); // 'success', 'error', or null
+  const [status, setStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
@@ -24,16 +24,11 @@ const Contact = () => {
     setIsSubmitting(true);
     setStatus(null);
 
-    // EmailJS configuration - Replace with your actual credentials
     const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
     const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
     const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
 
     try {
-      // For demo purposes, we'll simulate a successful submission
-      // In production, uncomment the EmailJS code below and add your credentials
-      
-      /*
       await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
@@ -44,10 +39,6 @@ const Contact = () => {
         },
         EMAILJS_PUBLIC_KEY
       );
-      */
-
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
       
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
@@ -60,8 +51,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 gradient-bg">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="contact" className="py-20 md:py-28 gradient-bg">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -69,15 +60,15 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Get In Touch</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
             Have a project in mind? Let's work together to create something amazing.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -99,7 +90,7 @@ const Contact = () => {
               ].map((item, index) => (
                 <motion.div
                   key={item.label}
-                  className="flex items-center gap-4 glass rounded-xl p-4"
+                  className="flex items-center gap-4 glass rounded-xl p-5"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -124,7 +115,7 @@ const Contact = () => {
           >
             <form onSubmit={handleSubmit} className="glass rounded-2xl p-8 space-y-6">
               <div>
-                <label htmlFor="name" className="block text-gray-300 mb-2">
+                <label htmlFor="name" className="block text-gray-300 mb-2 font-medium">
                   Name
                 </label>
                 <input
@@ -134,13 +125,13 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all text-white"
+                  className="w-full px-4 py-3.5 bg-gray-800/50 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all text-white placeholder-gray-500"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-gray-300 mb-2">
+                <label htmlFor="email" className="block text-gray-300 mb-2 font-medium">
                   Email
                 </label>
                 <input
@@ -150,13 +141,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all text-white"
+                  className="w-full px-4 py-3.5 bg-gray-800/50 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all text-white placeholder-gray-500"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-gray-300 mb-2 font-medium">
                   Message
                 </label>
                 <textarea
@@ -166,7 +157,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all text-white resize-none"
+                  className="w-full px-4 py-3.5 bg-gray-800/50 border border-gray-700 rounded-xl focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all text-white resize-none placeholder-gray-500"
                   placeholder="Tell me about your project..."
                 />
               </div>

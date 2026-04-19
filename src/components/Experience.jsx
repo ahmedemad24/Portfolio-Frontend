@@ -3,8 +3,8 @@ import experienceData from '../data/experience.json';
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 gradient-bg">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="experience" className="py-20 md:py-28 gradient-bg">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -12,10 +12,10 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Work Experience</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
             My professional journey and career highlights
           </p>
         </motion.div>
@@ -40,26 +40,26 @@ const TimelineItem = ({ job, index }) => {
 
   return (
     <motion.div
-      className={`relative flex items-center md:justify-between ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}
+      className={`relative flex items-center ${isLeft ? 'md:justify-end' : 'md:justify-start'} md:pl-0`}
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.15 }}
     >
       {/* Content */}
-      <div className={`ml-8 md:ml-0 md:w-[calc(50%-2rem)] ${isLeft ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left'}`}>
+      <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${isLeft ? 'md:pr-12' : 'md:pl-12 md:order-last'}`}>
         <div className="glass rounded-2xl p-6 card-hover">
-          <div className={`flex items-center gap-2 mb-2 ${!isLeft ? 'md:flex-row-reverse' : ''}`}>
-            <span className="px-3 py-1 text-xs bg-purple-600/20 text-purple-400 rounded-full">
+          <div className="flex items-center gap-2 mb-3 flex-wrap">
+            <span className="px-3 py-1 text-xs bg-purple-600/20 text-purple-400 rounded-full font-medium">
               {formatDate(job.startDate)} - {job.current ? 'Present' : formatDate(job.endDate)}
             </span>
           </div>
           <h3 className="text-xl font-bold text-white mb-1">{job.position}</h3>
           <p className="text-blue-400 font-medium mb-4">{job.company}</p>
-          <p className="text-gray-400 text-sm mb-4">{job.description}</p>
+          <p className="text-gray-400 text-sm mb-4 leading-relaxed">{job.description}</p>
           
           {job.achievements && (
-            <ul className={`space-y-2 ${!isLeft ? 'md:text-left' : ''}`}>
+            <ul className="space-y-2">
               {job.achievements.map((achievement, i) => (
                 <li key={i} className="flex items-start gap-2 text-gray-300 text-sm">
                   <span className="text-purple-400 mt-1">▹</span>
