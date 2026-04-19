@@ -1,0 +1,14 @@
+{
+  "name": "Alex Chen",
+  "title": "Frontend Developer",
+  "tagline": "Building Digital Experiences with Code & Creativity",
+  "bio": "I'm a passionate frontend developer specializing in creating beautiful, responsive, and user-friendly web applications. With expertise in React, TypeScript, and modern CSS frameworks, I transform ideas into elegant digital solutions.",
+  "email": "alex.chen@example.com",
+  "location": "San Francisco, CA",
+  "availability": "Open to opportunities",
+  "social": {
+    "github": "https://github.com/alexchen",
+    "linkedin": "https://linkedin.com/in/alexchen",
+    "twitter": "https://twitter.com/alexchen"
+  }
+}

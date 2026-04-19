@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "AI Dashboard Pro",
+    "description": "A comprehensive AI-powered analytics dashboard featuring real-time data visualization, machine learning insights, and predictive modeling capabilities. Built with React and D3.js for stunning visualizations.",
+    "image": "/images/project-ai-dashboard.png",
+    "technologies": ["React", "TypeScript", "D3.js", "Tailwind CSS", "Node.js"],
+    "liveLink": "https://ai-dashboard-pro.example.com",
+    "githubLink": "https://github.com/alexchen/ai-dashboard-pro",
+    "featured": true,
+    "category": "Dashboard"
+  },
+  {
+    "id": 2,
+    "title": "E-Commerce Platform",
+    "description": "Full-featured e-commerce solution with cart management, payment integration, inventory tracking, and admin panel. Includes dark mode and responsive design for all devices.",
+    "image": "/images/project-ecommerce.png",
+    "technologies": ["Next.js", "Stripe", "MongoDB", "Framer Motion"],
+    "liveLink": "https://shop-example.example.com",
+    "githubLink": "https://github.com/alexchen/ecommerce-platform",
+    "featured": true,
+    "category": "E-Commerce"
+  },
+  {
+    "id": 3,
+    "title": "TaskFlow App",
+    "description": "Collaborative project management tool with drag-and-drop kanban boards, team collaboration features, and real-time updates using WebSockets.",
+    "image": "/images/project-taskflow.png",
+    "technologies": ["React", "GraphQL", "Socket.io", "PostgreSQL"],
+    "liveLink": "https://taskflow.example.com",
+    "githubLink": "https://github.com/alexchen/taskflow-app",
+    "featured": false,
+    "category": "Productivity"
+  },
+  {
+    "id": 4,
+    "title": "Portfolio Generator",
+    "description": "Dynamic portfolio website generator that creates personalized developer portfolios from JSON configuration files. Features multiple themes and layouts.",
+    "image": "/images/project-portfolio-gen.png",
+    "technologies": ["Vite", "React", "Tailwind CSS", "Framer Motion"],
+    "liveLink": "https://portfolio-gen.example.com",
+    "githubLink": "https://github.com/alexchen/portfolio-generator",
+    "featured": false,
+    "category": "Tool"
+  },
+  {
+    "id": 5,
+    "title": "Weather Forecast App",
+    "description": "Beautiful weather application with location-based forecasts, interactive maps, and severe weather alerts. Uses OpenWeatherMap API for accurate data.",
+    "image": "/images/project-weather.png",
+    "technologies": ["React", "OpenWeatherMap API", "Mapbox", "CSS Modules"],
+    "liveLink": "https://weather-app.example.com",
+    "githubLink": "https://github.com/alexchen/weather-forecast",
+    "featured": false,
+    "category": "Utility"
+  },
+  {
+    "id": 6,
+    "title": "Social Media Dashboard",
+    "description": "Analytics dashboard for social media managers to track engagement, schedule posts, and analyze audience growth across multiple platforms.",
+    "image": "/images/project-social-dashboard.png",
+    "technologies": ["React", "Chart.js", "Firebase", "Material UI"],
+    "liveLink": "https://social-dash.example.com",
+    "githubLink": "https://github.com/alexchen/social-media-dashboard",
+    "featured": true,
+    "category": "Dashboard"
+  }
+]

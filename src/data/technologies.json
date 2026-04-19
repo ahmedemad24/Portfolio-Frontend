@@ -1,0 +1,57 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "icon": "SiReact"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "icon": "SiTypescript"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "icon": "SiTailwindcss"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "icon": "SiNextdotjs"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "icon": "SiNodedotjs"
+  },
+  {
+    "id": "graphql",
+    "name": "GraphQL",
+    "icon": "SiGraphql"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "icon": "SiFigma"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "icon": "SiGit"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "icon": "SiDocker"
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "icon": "SiAmazonwebservices"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "icon": "SiMongodb"
+  }
+]
