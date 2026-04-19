@@ -1,44 +1,58 @@
 [
   {
     "id": 1,
-    "company": "TechCorp Inc.",
-    "position": "Senior Frontend Developer",
-    "startDate": "2022-03",
+    "company": "3S Software - Secured Smart Systems",
+    "position": "Full-Stack .NET / Angular Developer",
+    "startDate": "2024-05",
     "endDate": "Present",
     "current": true,
-    "description": "Leading frontend development for enterprise SaaS products. Architected and implemented a component library used across 15+ products, improving development velocity by 40%.",
+    "description": "Designed and implemented microservices architecture for CAF platform using .NET Core, RabbitMQ, SQL Server, and React.",
     "achievements": [
-      "Led migration from class components to React Hooks and TypeScript",
-      "Implemented CI/CD pipelines reducing deployment time by 60%",
-      "Mentored team of 5 junior developers"
+      "Built Calendar, Form, and Event Management services",
+      "Improved system workflows and scalability",
+      "Led testing initiatives using NUnit for reliability"
     ]
   },
   {
     "id": 2,
-    "company": "StartupXYZ",
-    "position": "Frontend Developer",
-    "startDate": "2020-06",
-    "endDate": "2022-02",
+    "company": "Mahoney Shipping & Marine Services",
+    "position": "Full-Stack .NET / Angular Developer",
+    "startDate": "2023-10",
+    "endDate": "2024-05",
     "current": false,
-    "description": "Built and maintained customer-facing web applications serving 100K+ daily active users. Collaborated closely with design team to implement pixel-perfect UIs.",
+    "description": "Developed ERP system modules using .NET Core API, Angular, and SignalR.",
     "achievements": [
-      "Developed real-time collaboration features using WebSockets",
-      "Optimized application performance achieving 95+ Lighthouse scores",
-      "Integrated payment processing with Stripe"
+      "Enhanced performance and maintainability",
+      "Refactored legacy code for scalability",
+      "Improved real-time communication features"
     ]
   },
   {
     "id": 3,
-    "company": "Digital Agency Pro",
-    "position": "Junior Frontend Developer",
-    "startDate": "2019-01",
-    "endDate": "2020-05",
+    "company": "Scope Links LLC",
+    "position": "Full-Stack .NET Developer",
+    "startDate": "2023-03",
+    "endDate": "2023-09",
     "current": false,
-    "description": "Created responsive websites and web applications for diverse clients including e-commerce, healthcare, and finance sectors.",
+    "description": "Built scalable backend and frontend solutions for business systems.",
     "achievements": [
-      "Delivered 20+ client projects on time and within budget",
-      "Implemented accessibility standards (WCAG 2.1 AA)",
-      "Introduced modern build tools and workflows"
+      "Delivered reusable and optimized code",
+      "Designed scalable architectures",
+      "Worked on complex enterprise workflows"
+    ]
+  },
+  {
+    "id": 4,
+    "company": "Freelance",
+    "position": "Full-Stack Developer",
+    "startDate": "2022-05",
+    "endDate": "Present",
+    "current": true,
+    "description": "Developed multiple real-world applications including POS systems, booking platforms, and portfolio systems.",
+    "achievements": [
+      "Built Cinema Management System with authentication & CRUD",
+      "Developed LINK_POS (Web & Desktop)",
+      "Created dynamic portfolio platform"
     ]
   }
 ]

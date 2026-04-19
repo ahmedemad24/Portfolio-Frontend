@@ -24,11 +24,17 @@ const Contact = () => {
     setIsSubmitting(true);
     setStatus(null);
 
-    const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
-    const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-    const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+    const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     try {
+      console.log({
+        service: EMAILJS_SERVICE_ID,
+        template: EMAILJS_TEMPLATE_ID,
+        key: EMAILJS_PUBLIC_KEY
+      });
+      
       await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
