@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Github } from 'lucide-react';
+import { X } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import projectsData from '../data/projects.json';
 
 const ProjectModal = ({ project, onClose }) => {
@@ -87,7 +89,7 @@ const ProjectModal = ({ project, onClose }) => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Github size={18} />
+                <FaGithub size={20} />
                 View Code
               </motion.a>
             </div>

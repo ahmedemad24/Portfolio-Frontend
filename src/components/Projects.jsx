@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import projectsData from '../data/projects.json';
 
 const Projects = ({ onProjectClick }) => {
@@ -101,7 +102,7 @@ const ProjectCard = ({ project, index, compact = false, onClick }) => {
             whileTap={{ scale: 0.9 }}
             onClick={(e) => e.stopPropagation()}
           >
-            <Github size={20} />
+            <FaGithub size={20} />
           </motion.a>
         </div>
       </div>

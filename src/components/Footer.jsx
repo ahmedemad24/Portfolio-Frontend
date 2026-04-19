@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
+import { Heart } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import personalInfo from '../data/personal-info.json';
 
 const Footer = () => {
@@ -23,9 +24,9 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex gap-6 mb-8">
             {[
-              { platform: 'github', icon: Github, url: social.github },
-              { platform: 'linkedin', icon: Linkedin, url: social.linkedin },
-              { platform: 'twitter', icon: Twitter, url: social.twitter }
+              { platform: 'github', icon: FaGithub, url: social.github },
+              { platform: 'linkedin', icon: FaLinkedin, url: social.linkedin },
+              { platform: 'twitter', icon: FaTwitter, url: social.twitter }
             ].map((item) => (
               <motion.a
                 key={item.platform}
